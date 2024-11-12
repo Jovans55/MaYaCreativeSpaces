@@ -1,17 +1,32 @@
+* {
+  --teal: #44d6c6;
+  --forest: #024249;
+  --beach: #ede5d8;
+  --ocean: #0289bf;
+}
+
 body {
   margin: 0px;
+  color: white;
+  background-color: black;
 }
 
 /* NAV BAR */
 
 nav {
-  background-color: lightblue;
+  background-color: var(--ocean);
+  padding: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 nav > * {
   margin: 0px 100px;
+}
+
+nav > h1 {
+  margin: 0px;
+  margin-left: 25px;
 }
 
 nav > div {
@@ -23,6 +38,78 @@ nav > div > a {
   font-size: large;
 }
 
-nav > h1 {
+/* HERO */
+
+#hero {
+  background-color: var(--beach);
+  color: var(--ocean);
+  display: flex;
+  justify-content: end;
+}
+
+#hero > * {
   margin: 0px;
+  padding: 125px 0px;
+}
+
+#hero > div {
+  width: 50%;
+}
+
+#hero > div > * {
+  margin: 0px;
+}
+
+/* INFO */
+
+#info {
+  background-color: var(--forest);
+  padding: 100px 50px;
+}
+
+#info > * {
+  margin: 0px;
+}
+
+/* THREE STEPS */
+
+#threeSteps {
+  text-align: center;
+  color: var(--ocean);
+  background-color: var(--beach);
+  padding: 45px 0px;
+}
+
+#threeSteps > * {
+  margin: 0px;
+}
+
+/* DIFFERENCE */
+
+#difference {
+  background-color: var(--forest);
+  color: var(--teal);
+  padding: 100px 50px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--ocean);
+}
+
+footer > * {
+  margin: 0px;
+}
+
+@media only screen and (min-width: 1800px) {
+  /* NAV BAR */
+  nav {
+    justify-content: center;
+    background-color: red;
+  }
+
+  nav > div {
+    margin-left: 850px;
+  }
 }
