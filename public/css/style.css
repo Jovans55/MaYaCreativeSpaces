@@ -8,33 +8,40 @@
 body {
   margin: 0px;
   color: white;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic",
+    "ITC Franklin Gothic", Arial, sans-serif;
   background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /* NAV BAR */
 
 nav {
   background-color: var(--ocean);
-  padding: 15px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 
 nav > * {
-  margin: 0px 100px;
+  margin: 0px;
 }
 
-nav > h1 {
+nav > img {
   margin: 0px;
   margin-left: 25px;
 }
 
 nav > div {
-  margin: 5px 0px;
+  margin: 12px 0px;
 }
 
 nav > div > a {
-  margin: 0px 50px;
+  margin: 0px 60px;
   font-size: large;
 }
 
@@ -44,19 +51,37 @@ nav > div > a {
   background-color: var(--beach);
   color: var(--ocean);
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  height: 500px;
 }
 
-#hero > * {
-  margin: 0px;
-  padding: 125px 0px;
+#heroImg {
+  padding: 50px;
+  overflow: hidden;
 }
 
-#hero > div {
-  width: 50%;
+#heroImg > img {
+  width: 800px;
+  border-radius: 50%;
+  position: relative;
+  right: 200px;
+  bottom: 150px;
 }
 
-#hero > div > * {
+#heroText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+#heroText > div {
+  display: inline;
+  margin-left: 100px;
+}
+
+#heroText > div > * {
   margin: 0px;
 }
 
@@ -64,7 +89,11 @@ nav > div > a {
 
 #info {
   background-color: var(--forest);
-  padding: 100px 50px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  font-size: 16px;
+  padding: 50px;
 }
 
 #info > * {
@@ -77,11 +106,34 @@ nav > div > a {
   text-align: center;
   color: var(--ocean);
   background-color: var(--beach);
-  padding: 45px 0px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #threeSteps > * {
   margin: 0px;
+}
+
+#steps {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.step {
+  width: 50%;
+}
+
+.step > h1 {
+  color: var(--forest);
+  font-size: 65px;
+  margin: 0px;
+}
+
+.step > p {
+  color: var(--forest);
 }
 
 /* DIFFERENCE */
@@ -89,16 +141,36 @@ nav > div > a {
 #difference {
   background-color: var(--forest);
   color: var(--teal);
-  padding: 100px 50px;
+  padding: 70px 50px;
+}
+
+#difference > span {
+  color: white;
 }
 
 /* FOOTER */
 
 footer {
   background-color: var(--ocean);
+  display: flex;
+  justify-content: center;
 }
 
 footer > * {
+  margin: 30px 8vw;
+}
+
+#footerLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+#footerLinks > a {
+  margin-top: 25px;
+  font-size: 17px;
+}
+
+#contact > * {
   margin: 0px;
 }
 
