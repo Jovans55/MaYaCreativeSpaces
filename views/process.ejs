@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="/static/js/gallary.js"></script>
+    <title>MaYa Creative Spaces | Our Process</title>
+  </head>
+<body>
+    <%- include('partials/navbar') %>
+    <section id="hero">
+      <div class="heroImg">
+        <img src="/static/images/processHero.jpg"/>
+      </div>
+      <div id="heroText">
+        <div>
+          <p style="font-size: 55px">
+            Primary <br />
+            <strong style="font-weight: 700">Home Design</strong>
+          </p>
+          <div
+            style="
+              border-top: 1.5px solid #0289bf;
+              width: 40%;
+              padding: 2px;
+              margin-bottom: 10px;
+              border-bottom: 3px solid #0289bf;
+            "
+          ></div>
+          <p style="width: 80%; font-size: 18px; color: #024249">
+            After our clients see what we can do for their income-generating properties, many turn to us when they
+            <strong style="font-weight: 600; font-style: italic"
+              >buy, build or remodel their own homes.</strong
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="info">
+      <p>
+        We employ our same design process, but because this is your primary home, many of our clients want much more involvement in curating the style and design plan—which we love!
+        <br />
+        <br />
+        When you design with Maya Creative Spaces, you can <strong
+        style="font-weight: 600; font-style: italic"
+        >leverage our relationships</strong> and special pricing with our preferred suppliers to <strong
+        style="font-weight: 600; font-style: italic"
+        >design your dream home for less.</strong>
+      </p>
+    </section>
+    <section id="difference"> 
+      <p style="font-size: 45px; margin: 0px; margin-bottom: 10px">
+        Before & After
+      </p>
+      <div
+        style="
+          border-top: 1.5px solid #44d6c6;
+          width: 15%;
+          padding: 2px;
+          border-bottom: 3px solid #44d6c6;
+        "
+      ></div>
+    </section>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="/static/images/hero.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="/static/images/processHero.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="/static/images/logosmall.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="/static/images/mayaFullBody.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="/static/images/testimonialHero.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="img_snow_wide.jpg" style="width:100%">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>

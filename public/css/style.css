@@ -5,17 +5,29 @@
   --ocean: #0289bf;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0px;
   color: white;
   font-family: "Franklin Gothic Medium", "Franklin Gothic",
-    "ITC Franklin Gothic", Arial, sans-serif;
-  background-color: black;
+  "ITC Franklin Gothic", Arial, sans-serif;
+  background-color: var(--forest);
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+#hero, #info, #threeSteps, #difference, .info {
+  flex-grow: 1;
 }
 
 /* NAV BAR */
@@ -25,6 +37,10 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  flex-shrink: 0;
 }
 
 nav > * {
@@ -53,14 +69,15 @@ nav > div > a {
   display: flex;
   justify-content: space-between;
   height: 500px;
+  max-height: 500px;
 }
 
-#heroImg {
+.heroImg {
   padding: 50px;
   overflow: hidden;
 }
 
-#heroImg > img {
+.heroImg > img {
   width: 800px;
   border-radius: 50%;
   position: relative;
@@ -92,8 +109,13 @@ nav > div > a {
   align-items: center;
   flex-direction: column;
   display: flex;
-  font-size: 16px;
   padding: 50px;
+}
+
+#info > div {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 20px;
 }
 
 #info > * {
@@ -154,6 +176,7 @@ footer {
   background-color: var(--ocean);
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 footer > * {
@@ -174,6 +197,84 @@ footer > * {
   margin: 0px;
 }
 
+/* GALLARY */
+
+.container > IMG {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: var(--teal);
+  font-size: 80px;
+  user-select: none;
+  border-radius: 0px 50px 50px 0px;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 50px 0 0 50px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #44d6c51a
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 1800px) {
   /* NAV BAR */
   nav {
@@ -182,6 +283,6 @@ footer > * {
   }
 
   nav > div {
-    margin-left: 850px;
+    margin-left: 550px;
   }
 }
