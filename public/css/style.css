@@ -5,6 +5,48 @@
   --ocean: #0289bf;
 }
 
+@font-face {
+  font-family: 'Franklin Gothic ATF';
+  src: url('/static/fonts/Franklin Gothic ATF/Franklin Gothic ATF.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic ATF';
+  src: url('/static/fonts/Franklin Gothic ATF/Franklin Gothic ATF Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic ATF';
+  src: url('/static/fonts/Franklin Gothic ATF/Franklin Gothic ATF Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Presti';
+  src: url('/static/fonts/Presti/Presti Display Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presti';
+  src: url('/static/fonts/Presti/Presti Display Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presti';
+  src: url('/static/fonts/Presti/Presti Display Regular Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -16,14 +58,18 @@ html, body {
 body {
   margin: 0px;
   color: white;
-  font-family: "Franklin Gothic Medium", "Franklin Gothic",
-  "ITC Franklin Gothic", Arial, sans-serif;
+  font-family: 'Franklin Gothic ATF', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: var(--forest);
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+#pattern {
+  background-image: url("/static/images/pattern.png");;
+  padding: 25px;
 }
 
 #hero, #info, #threeSteps, #difference, .info {
@@ -149,8 +195,9 @@ nav > div > a {
 }
 
 .step > h1 {
+  font-family: Presti;
   color: var(--forest);
-  font-size: 65px;
+  font-size: 100px;
   margin: 0px;
 }
 
@@ -214,9 +261,13 @@ footer > * {
   margin: 0px;
 }
 
+#contact > h1 {
+  font-family: Presti;
+}
+
 /* GALLERY */
 
-#gallery{
+.gallery{
   display: flex;
   justify-content: center;
 }
@@ -283,9 +334,10 @@ footer > * {
   color: #44d6c6;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .column {
@@ -294,31 +346,45 @@ footer > * {
   padding: 10px;
   border-radius: 50%;
   opacity: 0.6;
+  transition: all 0.3s ease;
+  flex: 0 0 auto;
 }
 
 .active,
 .column:hover {
+  padding: 13px;
   opacity: 1;
+  transform: scale(1.2);
 }
 
 /* GALLERY PAGE */
 
 #mainGallery{
-  padding: 30px 100px 100px 100px;
+  padding: 50px 10%;
 }
 
 #mainGallery > h2 {
   color: var(--teal);
 }
 
+/* TESTIMONIALS */
+
+.testimonial > p{
+  font-size: larger;
+}
+
 @media only screen and (min-width: 1800px) {
   /* NAV BAR */
   nav {
     justify-content: center;
-    background-color: purple;
+    /* background-color: purple; */
   }
 
   nav > div {
     margin-left: 550px;
+  }
+
+  #difference{
+    padding: 50px 10%;
   }
 }
