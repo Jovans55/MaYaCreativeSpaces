@@ -25,6 +25,10 @@ app.get("/process", (req, res) => {
   res.render("process");
 });
 
+app.get("/gallery", (req, res) => {
+  res.render("gallery");
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
