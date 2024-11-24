@@ -452,6 +452,13 @@ footer > * {
     margin: 5px;
   }
 
+  /* THREE STEPS */
+
+  #steps {
+    align-items: center;
+    flex-direction: column;
+  }
+
   /* HERO */
 
   #hero {
