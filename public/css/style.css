@@ -64,11 +64,13 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #CCE9F6;
 }
 
 #pattern {
-  background-image: url("/static/images/pattern.png");;
+  background-image: url("/static/images/pattern.png");
+  background-repeat: repeat-x;
+  background-size: auto 50px;
   padding: 25px;
 }
 
@@ -168,6 +170,10 @@ nav > div > a:hover {
   margin-bottom: 20px;
 }
 
+#info > p {
+  font-size: 1.3em;
+}
+
 #info > * {
   margin: 0px;
 }
@@ -195,6 +201,7 @@ nav > div > a:hover {
 }
 
 .step {
+  font-size: 1.3em;
   width: 50%;
 }
 
@@ -214,6 +221,7 @@ nav > div > a:hover {
 #difference {
   background-color: var(--forest);
   color: var(--teal);
+  font-size: 1.3em;
   padding: 50px;
 }
 
@@ -275,6 +283,7 @@ footer > * {
 }
 
 #contact > * {
+  color: #CCE9F6;
   margin: 0px;
 }
 
@@ -393,7 +402,7 @@ footer > * {
 /* TESTIMONIALS */
 
 .testimonial > p{
-  font-size: larger;
+  font-size: 1.3em;
 }
 
 /* BIG SCREEN */
