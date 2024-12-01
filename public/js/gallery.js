@@ -1,16 +1,16 @@
 let slideIndexSingle = 1;
-let slideIndexKentucky = 1;
+let slideIndexTown = 1;
 let slideIndexCondo = 1;
 showSlidesSingle(slideIndexSingle);
-showSlidesKentucky(slideIndexKentucky);
+showSlidesTown(slideIndexTown);
 showSlidesCondo(slideIndexCondo);
 
 function plusSlidesSingle(n) {
     showSlidesSingle(slideIndexSingle += n);
 }
 
-function plusSlidesKentucky(n) {
-    showSlidesKentucky(slideIndexKentucky += n);
+function plusSlidesTown(n) {
+    showSlidesTown(slideIndexTown += n);
 }
 
 function plusSlidesCondo(n) {
@@ -21,8 +21,8 @@ function currentSlideSingle(n) {
     showSlidesSingle(slideIndexSingle = n);
 }
 
-function currentSlideKentucky(n) {
-    showSlidesKentucky(slideIndexKentucky = n);
+function currentSlideTown(n) {
+    showSlidesTown(slideIndexTown = n);
 }
 
 function currentSlideCondo(n) {
@@ -50,21 +50,21 @@ function showSlidesSingle(n) {
   captionText.innerHTML = imgElement.alt;
 }
 
-function showSlidesKentucky(n) {
+function showSlidesTown(n) {
     let i;
-    let slides = document.getElementsByClassName("mySlidesKentucky");
-    let dots = document.getElementsByClassName("columnKentucky");
-    let captionText = document.getElementById("captionKentucky");
-    if (n > slides.length) {slideIndexKentucky = 1}
-    if (n < 1) {slideIndexKentucky = slides.length}
+    let slides = document.getElementsByClassName("mySlidesTown");
+    let dots = document.getElementsByClassName("columnTown");
+    let captionText = document.getElementById("captionTown");
+    if (n > slides.length) {slideIndexTown = 1}
+    if (n < 1) {slideIndexTown = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace("active", "");
     }
-    slides[slideIndexKentucky-1].style.display = "block";
-    dots[slideIndexKentucky-1].className += " active";
+    slides[slideIndexTown-1].style.display = "block";
+    dots[slideIndexTown-1].className += " active";
   
     let imgElement = slides[n - 1].querySelector("img");
     

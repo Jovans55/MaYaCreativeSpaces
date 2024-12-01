@@ -7,42 +7,54 @@
 
 @font-face {
   font-family: 'Franklin Gothic ATF';
-  src: url('/static/fonts/Franklin Gothic ATF/Franklin Gothic ATF.otf') format('opentype');
+  src: url('/static/fonts/Franklin Gothic ATF/FranklinGothicATF-Regular.woff2') format('woff2'),
+       url('/static/fonts/Franklin Gothic ATF/FranklinGothicATF-Regular.woff') format('woff'),
+       url('/static/fonts/Franklin Gothic ATF/FranklinGothic-ATF.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Franklin Gothic ATF';
-  src: url('/static/fonts/Franklin Gothic ATF/Franklin Gothic ATF Bold.otf') format('opentype');
+  src: url('/static/fonts/Franklin Gothic ATF/FranklinGothicATF-Bold.woff2') format('woff2'),
+       url('/static/fonts/Franklin Gothic ATF/FranklinGothicATF-Bold.woff') format('woff'),
+       url('/static/fonts/Franklin Gothic ATF/FranklinGothic-ATF-Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Franklin Gothic ATF';
-  src: url('/static/fonts/Franklin Gothic ATF/Franklin Gothic ATF Italic.otf') format('opentype');
+  src: url('/static/fonts/Franklin Gothic ATF/FranklinGothicATF-Italic.woff2') format('woff2'),
+       url('/static/fonts/Franklin Gothic ATF/FranklinGothicATF-Italic.woff') format('woff'),
+       url('/static/fonts/Franklin Gothic ATF/FranklinGothic-ATF-Italic.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Presti';
-  src: url('/static/fonts/Presti/Presti Display Regular.otf') format('opentype');
+  src: url('/static/fonts/Presti/PrestiDisplay-Regular.woff2') format('woff2'),
+       url('/static/fonts/Presti/PrestiDisplay-Regular.woff') format('woff'),
+       url('/static/fonts/Presti/PrestiDisplay-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Presti';
-  src: url('/static/fonts/Presti/Presti Display Bold.otf') format('opentype');
+  src: url('/static/fonts/Presti/PrestiDisplay-Bold.woff2') format('woff2'),
+       url('/static/fonts/Presti/PrestiDisplay-Bold.woff') format('woff'),
+       url('/static/fonts/Presti/PrestiDisplay-Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Presti';
-  src: url('/static/fonts/Presti/Presti Display Regular Italic.otf') format('opentype');
+  src: url('/static/fonts/Presti/PrestiDisplay-RegularItalic.woff2') format('woff2'),
+       url('/static/fonts/Presti/PrestiDisplay-RegularItalic.woff') format('woff'),
+       url('/static/fonts/Presti/PrestiDisplay-RegularItalic.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
 }
@@ -68,7 +80,7 @@ a {
 }
 
 #pattern {
-  background-image: url("/static/images/pattern.png");
+  background-image: url("/static/images/pattern.webp");
   background-repeat: repeat-x;
   background-size: auto 50px;
   padding: 25px;
