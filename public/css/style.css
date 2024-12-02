@@ -303,6 +303,10 @@ footer > * {
   font-family: Presti;
 }
 
+#contact > a {
+  display: block;
+}
+
 /* PROCESS */
 
 #mainProcess{
