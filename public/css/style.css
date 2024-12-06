@@ -320,11 +320,9 @@ footer > * {
   justify-content: center;
 }
 
-.containerP {
+.containert {
   position: relative;
-  min-width: 800px;
-  max-width: 800px;
-  max-height: 500px;
+  max-width: 1200px;
 }
 
 .container{
@@ -452,7 +450,7 @@ footer > * {
   /* TESTIMONIAL */
 
   #testimonial > img {
-    width: 15%;
+    width: 10%;
   }
 }
 
