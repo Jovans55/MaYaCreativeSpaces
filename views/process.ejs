@@ -27,7 +27,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="MaYa Creative Spaces" />
     <link rel="manifest" href="/static/images/favicon/site.webmanifest" />
-    <script src="/static/js/process.js" defer></script>
     <title>MaYa Creative Spaces | Our Process</title>
   </head>
 <body>
@@ -74,64 +73,7 @@
           >design your dream home for less.</strong>
         </p>
       </section>
-      <section id="difference"> 
-        <p style="font-size: 50px; margin: 0px; margin-bottom: 10px; font-family: Presti;">
-          Before & After
-        </p>
-        <div
-          style="
-            border-top: 1.5px solid #44d6c6;
-            width: 15%;
-            padding: 2px;
-            border-bottom: 3px solid #44d6c6;
-          "
-        ></div>
-      </section>
-      <section style="display: flex; justify-content: center;">
-        <div class="containerP">
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-          <div class="mySlides">
-            <img src="/static/images/beforeAfter/brown_living_room.webp"
-            alt="BROWN LIVING ROOM BEFORE & AFTER" style="width:100%">
-          </div>
-          <div class="mySlides">
-            <img src="/static/images/beforeAfter/blue_bedroom.webp"
-            alt="BLUE BEDROOM BEFORE & AFTER" style="width:100%">
-          </div>
-          <div class="mySlides">
-            <img src="/static/images/beforeAfter/dining_room.webp"
-            alt="DINING ROOM BEFORE & AFTER" style="width:100%">
-          </div>
-          <div class="mySlides">
-            <img src="/static/images/beforeAfter/white_living_room.webp"
-            alt="WHITE LIVING ROOM BEFORE & AFTER" style="width:100%">
-          </div>
-          <div class="mySlides">
-            <img src="/static/images/beforeAfter/black_and_white_living_room.webp"
-            alt="BLACK AND WHITE LIVING ROOM BEFORE & AFTER" style="width:100%">
-          </div>
-          <a class="prev" rel="noreferrer" onclick="plusSlides(-1)">❮</a>
-          <a class="next" rel="noreferrer" onclick="plusSlides(1)">❯</a>
-          <div class="row">
-            <div class="column cursor" onclick="currentSlide(1)">
-            </div>
-            <div class="column cursor" onclick="currentSlide(2)">
-            </div>
-            <div class="column cursor" onclick="currentSlide(3)">
-            </div>
-            <div class="column cursor" onclick="currentSlide(4)">
-            </div>
-            <div class="column cursor" onclick="currentSlide(5)">
-            </div>    
-          </div>
-        </div>
-      </section>
-      <div>
-        <p style="font-size: 1.3em;">Click below to view the rest of our work.</p>
-        <button id="processBtn" class="cursor" onclick="document.location='gallery'">VIEW FULL GALLERY</button>
-      </div>
+      <button id="processBtn" class="cursor" onclick="document.location='gallery'">VIEW FULL GALLERY</button>
     </main>
     <%- include('partials/footer') %>
 </body>

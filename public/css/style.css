@@ -86,7 +86,7 @@ a {
   padding: 25px;
 }
 
-#hero, #info, #threeSteps, #difference, .info {
+#hero, #info, #threeSteps, #difference, .info, #mainProcess {
   flex-grow: 1;
 }
 
@@ -247,12 +247,8 @@ nav > div > a:hover {
   padding: 50px 10px;
 }
 
-#mainProcess > div{
-  padding: 50px; 
-  margin-top: 100px;
-}
-
 #processBtn{
+  margin-top: 70px;
   background-color: var(--forest);
   color: var(--teal);
   border: 3px solid var(--teal);
@@ -277,7 +273,7 @@ footer {
 }
 
 footer > * {
-  margin: 30px 8vw;
+  margin: 30px 6vw;
 }
 
 #footerLinks {
@@ -305,6 +301,10 @@ footer > * {
 
 #contact > a {
   display: block;
+}
+
+#contactHolder {
+  display: flex;
 }
 
 /* PROCESS */
@@ -345,7 +345,7 @@ footer > * {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 45%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -409,10 +409,6 @@ footer > * {
 
 #mainGallery{
   padding: 50px 10%;
-}
-
-#mainGallery > h2 {
-  color: var(--teal);
 }
 
 /* TESTIMONIALS */
@@ -526,8 +522,16 @@ footer > * {
     margin: 0px 3vw;
   }
 
-  footer > Img {
+  #footerImg {
     display: none;
+  }
+
+  #contactHolder{
+    flex-direction: column;
+  }
+
+  #contactHolder > img {
+    padding: 0px;
   }
 
   /* PROCESS */
