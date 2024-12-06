@@ -27,6 +27,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="MaYa Creative Spaces" />
     <link rel="manifest" href="/static/images/favicon/site.webmanifest" />
+    <script src="/static/js/testimonials.js" defer></script>
     <title>MaYa Creative Spaces | Testimonials</title>
 </head>
 <body>
@@ -60,28 +61,39 @@
       <div id="pattern"></div>
       <main style="padding: 50px 10%;" id="testimonial">
         <img src="/static/images/qouteStart.webp" width="7%" alt="just a large image of a qoute sign"/>
-        <section id="info">
+        <section class="gallery">
+          <div class="container">
             <div class="testimonial">
-                <p>Maya was a tremendous help when I needed to outfit my condo from afar.  She not only knew the best deals for my budget-she was meticulous! Highly recommend!
-                </p>
-                <h4>-Caroline Nasson-Specht</h4>
+              <p>Maya was a tremendous help when I needed to outfit my condo from afar.  She not only knew the best deals for my budget-she was meticulous! Highly recommend!
+              </p>
+              <h4>-Caroline Nasson-Specht</h4>
             </div>
             <div class="testimonial">
-                <p>Maya did a great job of helping us choose the right "feel" and provided hassle free service to get everything in place. Highly recommend her!</p>
-                <h4>Jim Darcey</h4>
+              <p>Maya did a great job of helping us choose the right "feel" and provided hassle free service to get everything in place. Highly recommend her!</p>
+              <h4>-Jim Darcey</h4>
             </div>
             <div class="testimonial">
-                <p>Cant say enough good things about Maya. She's organized, attentive, & loves what she does.  We've worked together on two properties--highly recommend.</p>
-                <h4>-Vanessa H</h4>
+              <p>Cant say enough good things about Maya. She's organized, attentive, & loves what she does.  We've worked together on two properties--highly recommend.</p>
+              <h4>-Vanessa H</h4>
             </div>
             <div class="testimonial">
-                <p>Maya addressed all our needs & ideas while rehab & furnishing our condo. She is skilled, professional, respectful. We recommend Maya. </p>
-                <h4>-Bernice & Daniel Giala</h4>
+              <p>Maya addressed all our needs & ideas while rehab & furnishing our condo. She is skilled, professional, respectful. We recommend Maya. </p>
+              <h4>-Bernice & Daniel Giala</h4>
             </div>
             <div class="testimonial">
-                <p>Maya is incredible. She has a great understanding of space and how to utilize it best with the appropriate furnishings. She will not disappoint!!! </p>
-                <h4>-Carla & Scott Arsenault </h4>
+              <p>Maya is incredible. She has a great understanding of space and how to utilize it best with the appropriate furnishings. She will not disappoint!!! </p>
+              <h4>-Carla & Scott Arsenault </h4>
             </div>
+            <a class="prev" rel="noreferrer" onclick="plusSlides(-1)">❮</a>
+            <a class="next" rel="noreferrer" onclick="plusSlides(1)">❯</a>
+            <div class="row">
+              <div class="column cursor" onclick="currentSlide(1)"></div>
+              <div class="column cursor" onclick="currentSlide(2)"></div>
+              <div class="column cursor" onclick="currentSlide(3)"></div>
+              <div class="column cursor" onclick="currentSlide(4)"></div>
+              <div class="column cursor" onclick="currentSlide(5)"></div>
+            </div>
+          </div>
         </section>
         <img src="/static/images/qouteEnd.webp" width="7%" style="float: right;" alt="just a large image of a qoute sign"/>
       </main>

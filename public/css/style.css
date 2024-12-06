@@ -413,6 +413,11 @@ footer > * {
 
 /* TESTIMONIALS */
 
+.testimonial {
+  padding: 0px 100px;
+  display: none;
+}
+
 .testimonial > p{
   font-size: 1.3em;
 }
