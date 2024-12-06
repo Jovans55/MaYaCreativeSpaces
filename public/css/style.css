@@ -107,7 +107,7 @@ nav > * {
   margin: 0px;
 }
 
-nav > img {
+nav > a {
   margin: 0px;
   margin-left: 25px;
 }
@@ -436,7 +436,7 @@ footer > * {
 /* LITTLE SCREEN */
 @media only screen and (max-width: 1210px) {
   /* NAV BAR */
-  nav > img {
+  nav > a {
     margin-left: 5px;
   }
   
@@ -458,7 +458,7 @@ footer > * {
     display: inline;
   }
 
-  nav > img {
+  nav > a {
     margin: 0px;
     width: 100px;
   }
