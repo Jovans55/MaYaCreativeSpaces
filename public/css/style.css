@@ -490,8 +490,8 @@ footer > * {
     color: var(--ocean);
     display: flex;
     justify-content:center;
-    height: 500px;
-    min-height: 500px;
+    height: 550px;
+    min-height: 550px;
   }
 
   .heroImg {
