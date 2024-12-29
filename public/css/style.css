@@ -166,6 +166,11 @@ nav > div > a:hover {
   margin: 0px;
 }
 
+#heroText > div > p {
+  font-size: 3.5em;
+  font-family: Presti;
+}
+
 /* INFO */
 
 #info {
@@ -509,10 +514,20 @@ footer > * {
 
   #heroText {
     width: 100%;
+    /* min-width: 270px;
+    word-break: break-word;  */
   }
 
   #heroText > div {
     margin-left: 15px;
+  }
+
+  #heroText > div > p {
+    font-size: 2.3em;
+  }
+
+  #heroText > div > h1 {
+    font-size: 1em;
   }
 
   /* FOOTER */
@@ -523,6 +538,10 @@ footer > * {
   
   footer > * {
     margin: 0px 3vw;
+  }
+
+  #footerLinks {
+    margin: 0px;
   }
 
   #footerImg {
