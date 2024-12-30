@@ -514,20 +514,18 @@ footer > * {
 
   #heroText {
     width: 100%;
-    /* min-width: 270px;
-    word-break: break-word;  */
   }
 
   #heroText > div {
-    margin-left: 15px;
+    margin-left: 5px;
   }
 
   #heroText > div > p {
-    font-size: 2.3em;
+    font-size: 2.4em;
   }
 
   #heroText > div > h1 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   /* FOOTER */
