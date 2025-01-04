@@ -417,12 +417,12 @@ footer > * {
 /* TESTIMONIALS */
 
 .testimonial {
-  padding: 0px 100px;
+  padding: 0px 50px;
   display: none;
 }
 
 .testimonial > p{
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 /* BIG SCREEN */
